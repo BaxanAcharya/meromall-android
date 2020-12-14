@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".SignInFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/sign_in_close_button"
+            android:layout_width="40dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@android:color/transparent"
+            android:padding="16dp"
+            android:src="@drawable/ic_close_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="178dp"
+            android:layout_height="158dp"
+            android:src="@mipmap/ic_splash"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.429"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.143" />
+
+        <EditText
+            android:id="@+id/sign_in_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#70ffffff"
+            android:ems="10"
+            android:hint="Enter Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="#70ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <EditText
+            android:id="@+id/sign_in_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#70ffffff"
+            android:ems="10"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="#70ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.439"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sign_in_email" />
+
+        <TextView
+            android:id="@+id/sign_in_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="Forgot Password?"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="@+id/sign_in_password"
+            app:layout_constraintTop_toBottomOf="@+id/sign_in_password" />
+
+        <Button
+            android:id="@+id/sign_in_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorAccent"
+            android:enabled="false"
+            android:text="SignIn"
+            android:textAllCaps="false"
+            android:textColor="@color/btnRed"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sign_in_forgot_password"
+            app:layout_constraintVertical_bias="0.313" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="31dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="48dp"
+            android:text="OR"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintBottom_toTopOf="@+id/sign_in_sign_up"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sign_in_button"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/sign_in_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Don't have an account? SignUp"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/sign_in_progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/sign_in_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sign_in_password"
+            tools:visibility="gone" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

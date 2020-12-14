@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "177184591048",
+    "firebase_url": "https://ecommerce-17c38.firebaseio.com",
+    "project_id": "ecommerce-17c38",
+    "storage_bucket": "ecommerce-17c38.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177184591048:android:3d239847e8557f1643e9fd",
+        "android_client_info": {
+          "package_name": "com.example.meromall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177184591048-hmt6k2spim0luj1ejed59hmubiq0bij2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq1bmi6TSxCPK22Ured3vK7AShAGZ7S5Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "177184591048-hmt6k2spim0luj1ejed59hmubiq0bij2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
